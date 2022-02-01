@@ -15,8 +15,8 @@ export function ButtonSendSticker(props) {
         styleSheet={{
           borderRadius: '50%',
           padding: '0 3px 0 0',
-          minWidth: '40px',
-          minHeight: '40px',
+          minWidth: '50px',
+          minHeight: '50px',
           fontSize: '50px',
           marginBottom: '8px',
           lineHeight: '0',
@@ -74,7 +74,6 @@ export function ButtonSendSticker(props) {
             {appConfig.stickers.map((sticker) => (
               <Text
                 onClick={() => {
-                  // console.log('[DENTRO DO COMPONENTE] Clicou no sticker:', sticker);
                   if (Boolean(props.onStickerClick)) {
                     props.onStickerClick(sticker);
                   }

@@ -21,7 +21,6 @@ function Titulo(props) {
 }
 
 export default function PaginaInicial() {
-  //let username = 'hallisonbrancalhao';
   const [username, setUsername] = React.useState('hallisonbrancalhao');
   fetch('https://api.github.com/users/hallisonbrancalhao').then(async (resposta) => {
     const respostaEsperada = await resposta.json();
@@ -100,10 +99,7 @@ export default function PaginaInicial() {
               }}
             />
           </Box>
-          {/* Formulário */}
 
-
-          {/* Photo Area */}
           <Box
             styleSheet={{
               display: 'flex',
@@ -140,7 +136,6 @@ export default function PaginaInicial() {
               {username}
             </Text>
           </Box>
-          {/* Photo Area */}
         </Box>
       </Box>
     </>
